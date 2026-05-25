@@ -116,7 +116,7 @@ class ChatViewModel @Inject constructor(
 
         agentJob = viewModelScope.launch {
             val state = _uiState.value
-            val model = state.currentModel.ifBlank { "deepseek/deepseek-chat:free" }
+            val model = state.currentModel.ifBlank { "deepseek/deepseek-v4-flash:free" }
             val autoConfirm = agentRepository.autoConfirm.first()
             val personality = agentRepository.personality.first()
             val temperature = agentRepository.temperature.first().toDouble()

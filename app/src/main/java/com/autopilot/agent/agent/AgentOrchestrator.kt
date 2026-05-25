@@ -46,12 +46,12 @@ class AgentOrchestrator @Inject constructor(
 
         /** Fallback free models to try if the selected model fails */
         private val FALLBACK_MODELS = listOf(
-            "deepseek/deepseek-chat:free",
-            "deepseek/deepseek-r1-0528:free",
-            "meta-llama/llama-3.1-8b-instruct:free",
-            "google/gemma-2-9b-it:free",
-            "mistralai/mistral-7b-instruct:free",
-            "qwen/qwen-2-7b-instruct:free"
+            "deepseek/deepseek-v4-flash:free",
+            "meta-llama/llama-3.3-70b-instruct:free",
+            "google/gemma-4-31b-it:free",
+            "nvidia/nemotron-3-super-120b-a12b:free",
+            "openai/gpt-oss-120b:free",
+            "qwen/qwen3-coder:free"
         )
     }
 
